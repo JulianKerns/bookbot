@@ -26,7 +26,6 @@ def get_book_text(path):
         return f.read()
 
 def get_count_characters(text):
-    alphabeth =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
     count_dict = {}
     for c in text:
         lowered = c.lower()
