@@ -1,5 +1,5 @@
 def main():
-    book_path = "books/frankenstein.txt.txt"
+    book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     count = get_count_characters(text)
@@ -11,7 +11,7 @@ def main():
     for item in report:
         if not item["char"].isalpha():
             continue
-        print(f"The '{item["char"]}' character has been found {item["num"]} times")
+        print(f"The '{item['char']}' character has been found {item['num']} times")
     print("--- End Report ---")
     
     
